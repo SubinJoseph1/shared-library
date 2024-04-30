@@ -38,6 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "preserveSymlinks":true,
             "outputPath": "dist/ngx-sample-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -118,8 +119,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a54aaf0d-7277-4bc2-86e2-f1194a8a200e"
   }
 }
