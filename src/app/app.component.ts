@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MySharedComponentsComponent } from 'my-shared-components';
+import { MySharedComponentsComponent } from '../dist/my-shared-components';
 
 @Component({
   selector: 'app-root',
